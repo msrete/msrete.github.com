@@ -18,10 +18,10 @@ owner:
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
   description:    Awesome Dude, Awesome Life
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        msrete
-  facebook:       msrete
+  twitter:        
+  facebook:       
   github:         msrete      
-  instagram:      msrete
+  instagram:      
   # For Google Authorship https://plus.google.com/authorship
   google_plus:    https://plus.google.com/u/0/111163776644019844749
 
