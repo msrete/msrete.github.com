@@ -32,14 +32,14 @@ chart: true
 현재 [**한국기술교육대학교**](http://www.koreatech.ac.kr/) 에서 [컴퓨터공학](http://cse.kut.ac.kr/)을 전공하고 있다. 졸업작품으로 NF를 이용한 관광관리 시스템을 제작했으며, 사용한 알고리즘을 정보통신학회에서 **상황인식 기반의 관광소셜 네트워크 서비스 응용** 이라는 논문으로 발표했으며, 우수논문상을 수여받았다.
 
 <figure>
-	<img src="{{ site.url }}/images/paper.png" alt="Tour Social Network Service System Using Context Awareness">
+	<img src="{{ site.url }}/images/paper.jpg" alt="Tour Social Network Service System Using Context Awareness">
 	<figcaption>Tour Social Network Service System Using Context Awareness</figcaption>
 </figure>
 
 또한 알고리즘에 대해 **NFC를 이용한 낙서관리 시스템 및 이를 이용한 낙서관리 서비스 제공방법** 이라는 특허를 출원한 상태이다.
 
 <figure>
-	<img src="{{ site.url }}/images/patent.png" alt="The Request">
+	<img src="{{ site.url }}/images/patent.jpg" alt="The Request">
 	<figcaption>The Request</figcaption>
 </figure>
 
