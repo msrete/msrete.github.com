@@ -3,11 +3,11 @@ description:      "Blogging is fun"
 logo:             favicon.png
 disqus_shortname: simon
 share:            true
-dropcap:	  msrete.github.com
+dropcap:	  true
 # Change url to your domain. Leave localhost server or blank when working locally.
 # or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same 
 # whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl 'msrete.github.com'
-url:        	  /Notepad
+url:        	  msrete.github.com
 
 # Owner/author information
 owner:
