@@ -8,7 +8,7 @@ dropcap:	  true
 # or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same 
 # whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl 'msrete.github.com'
 baseurl: "/msrete.github.com"
-url: "http://msrete.github.io"
+url: "https://msrete.github.io"
 
 # Owner/author information
 owner:
