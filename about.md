@@ -6,7 +6,9 @@ tags: [Simon, Jang, 민석, 장민석]
 imagefeature: fourseasons.jpg
 chart: true
 ---
+<figure>
 
+</figure>
 
 {% assign total_words = 0 %}
 {% assign total_readtime = 0 %}
