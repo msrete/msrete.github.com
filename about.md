@@ -7,7 +7,7 @@ imagefeature: fourseasons.jpg
 chart: true
 ---
 <figure>
-  <img src="{{ site.url }}/images/hossain-faysal.jpg" alt="Hossain Mohammad Faysal">
+  <img src="documents/github/msrete.github.com/images/hossain-faysal.jpg" alt="Hossain Mohammad Faysal">
   <figcaption>Hossain Mohammad Faysal</figcaption>
 </figure>
 
@@ -34,10 +34,10 @@ chart: true
 	<img src="{{ site.url }}/images/paper.png" alt="Tour Social Network Service System Using Context Awareness">
 	<figcaption>Tour Social Network Service System Using Context Awareness</figcaption>
 </figure>
-또한 알고리즘에 대해 특허를 출원한 상태이다.
+또한 알고리즘에 대해 **NFC를 이용한 낙서관리 시스템 및 이를 이용한 낙서관리 서비스 제공방법** 이라는 특허를 출원한 상태이다.
 <figure>
-	<img src="{{ site.url }}/images/patent.png" alt="The request">
-	<figcaption>Tour Social Network Service System Using Context Awareness</figcaption>
+	<img src="{{ site.url }}/images/patent.png alt="The request">
+	<figcaption>The request</figcaption>
 </figure>
 
 I was born and brought up in Doha. Yes, its a desert peninsula, yes we have camels and falcons and all the other Middle Eastern traits/stereotypes you can think of.
