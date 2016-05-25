@@ -7,7 +7,7 @@ imagefeature: fourseasons.jpg
 chart: true
 ---
 <figure>
-  <img src="documents/github/msrete.github.com/images/hossain-faysal.jpg" alt="Hossain Mohammad Faysal">
+  <img src="C:\Users\msret_000\Documents\GitHub\msrete.github.com\images\hossain-faysal.jpg" alt="Hossain Mohammad Faysal">
   <figcaption>Hossain Mohammad Faysal</figcaption>
 </figure>
 
