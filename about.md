@@ -27,19 +27,13 @@ chart: true
 {% endfor %}
 
 
-내 이름은 **장민석** 또는 **Simon Jang**. 이곳은 나의 첫 개인블로그다. 이 블로그는 현재 {{ site.posts | size }} 개의 포스트가 {{ site.categories | size }} 개의 카테고리 안에 {{ total_words }} 개의 단어로 이루어져 있으며, 평균 구독시간 ({{ site.wpm }} WPM) 약 <span class="time">{{ total_readtime }}</span> 분 정도 걸린다. {% if featuredcount != 0 %} 현재 <a href="{{ site.url }}/featured">{{ featuredcount }} featured posts</a>, you should definitely check those out.{% endif %} The most recent post is {% for post in site.posts limit:1 %}{% if post.description %}<a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}">"{{ post.title }}"</a>{% else %}<a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}" title="Read more about {{ post.title }}">"{{ post.title }}"</a>{% endif %}{% endfor %} which was published on {% for post in site.posts limit:1 %}{% assign modifiedtime = post.modified | date: "%Y%m%d" %}{% assign posttime = post.date | date: "%Y%m%d" %}<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>{% if post.modified %}{% if modifiedtime != posttime %} and last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time>{% endif %}{% endif %}{% endfor %}. The last commit was on {{ site.time | date: "%A, %d %b %Y" }} at {{ site.time | date: "%I:%M %p" }} [UTC](http://en.wikipedia.org/wiki/Coordinated_Universal_Time "Temps Universel Coordonné").
+내 이름은 **장민석** , **Simon Jang**. 이곳은 나의 첫 개인블로그다. 이 블로그는 현재 {{ site.posts | size }} 개의 게시글이 {{ site.categories | size }} 개의 카테고리안에 {{ total_words }} 개의 단어로 이루어져 있으며, 평균 구독시간 ({{ site.wpm }} WPM) 약 <span class="time">{{ total_readtime }}</span> 분 정도 걸린다. {% if featuredcount != 0 %} 현재 <a href="{{ site.url }}/featured">{{ featuredcount }} 중요게시글</a>이 있고, Git과 Jekyll을 활용하고자 한다면 꼭 확인해보길 바란다. {% endif %} 가장 최근 게시글인 {% for post in site.posts limit:1 %}{% if post.description %}<a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}">"{{ post.title }}"</a>{% else %}<a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}" title="Read more about {{ post.title }}">"{{ post.title }}"</a>{% endif %}{% endfor %} 은 {% for post in site.posts limit:1 %}{% assign modifiedtime = post.modified | date: "%Y%m%d" %}{% assign posttime = post.date | date: "%Y%m%d" %}<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>{% if post.modified %}{% if modifiedtime != posttime %} and last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time>{% endif %}{% endif %}{% endfor %}에 작성되었다. 마지막 커밋시각은 {{ site.time | date: "%A, %d %b %Y" }} at {{ site.time | date: "%I:%M %p" }} [UTC](http://en.wikipedia.org/wiki/Coordinated_Universal_Time "Temps Universel Coordonné")이다..
 
-I am an PhD candidate in *ESE* at the [SEAS](http://www.seas.upenn.edu/) at **UPENN**. I am licensed as a Professional Engineer (P.E) to practice in the states of Texas, Massachusetts and California. I double majored in EECS and Mathematics during my undergraduate life at [MIT](http://www.mit.edu/), and currently focusing on Electrical Engineering for my post-graduate studies.
-
-*[ESE]: Electrical and Systems Engineering
-*[SEAS]: School of Engineering and Applied Science
-*[MIT]: Massachusetts Institute of Technology
-*[EECS]: Electrical and Computer Engineering
-*[UPENN]: University of Pennsylvania
+현재 [**한국기술교육대학교 **](http://www.koreatech.ac.kr/) 에서 [*컴퓨터공학*](http://cse.kut.ac.kr/)을 전공하고 있다. 졸업작품으로 NF를 이용한 관광관리 시스템을 제작했으며, 이를 이용하여 정보통신학회에서 *상황인식 기반의 관광소셜 네트워크 서비스 응용* 논문을 발표했으며, 우수논문상을 수여받았다.
 
 <figure>
-	<img src="{{ site.url }}/images/Hossain-Mohd-Faysal.jpg" alt="Hossain Mohammad Faysal">
-	<figcaption>At Bates Linear Accelerator Center</figcaption>
+	<img src="{{ site.url }}/images/paper.png" alt="Hossain Mohammad Faysal">
+	<figcaption>Tour Social Network Service System Using Context Awareness</figcaption>
 </figure>
 
 I was born and brought up in Doha. Yes, its a desert peninsula, yes we have camels and falcons and all the other Middle Eastern traits/stereotypes you can think of.
