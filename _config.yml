@@ -1,4 +1,4 @@
-title:            Notepad
+title:            
 description:      "Simon's Notepad"
 logo:             logo.png
 disqus_shortname: simon
@@ -12,7 +12,7 @@ url: "https://msrete.github.io"
 
 # Owner/author information
 owner:
-  name:           Hossain Mohd Faysal
+  name:           ¿Â πŒºÆ(Simon Jang)
   avatar:         hmfaysal.jpg
   email:          hmfaysal@alum.mit.edu
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
