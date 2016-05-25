@@ -1,80 +1,67 @@
 <!DOCTYPE html>
 <html>
-
-  {% include head.html %}
-
-  <body>
-
-    <div class="cover">
-      <div class="clock"></div>
-      <div class='hours'></div>
-      <div class='seconds'></div>
-      <div class='minutes'></div>
-      <div class="site-name">
-        <div class="site-name__inner">
-          <div class="name">{{ site.title }}</div>
-          <div class="desc">{{site.description}}</div>
-          <div class="btn">Blog</div>
-        </div>
-      </div>
+<!--
+====================================================
+    __  ____  ______________  _______ ___    __ 
+   / / / /  |/  / ____/   \ \/ / ___//   |  / / 
+  / /_/ / /|_/ / /_  / /| |\  /\__ \/ /| | / /  
+ / __  / /  / / __/ / ___ |/ /___/ / ___ |/ /___
+/_/ /_/_/  /_/_/   /_/  |_/_//____/_/  |_/_____/
+                                                     
+====================================================
+Owner Name: Hossain Mohammad Faysal
+Profile: https://www.facebook.com/hmfaysal
+Version: 1.1
+Description: Awesome dude, awesome life
+====================================================
+-->
+<head>
+{% include head.html %}
+</head>
+<body class="home-template" itemscope itemtype="http://schema.org/WebPage">
+<header class="notepad-site-head">
+    <div class="notepad-site-head-menu">
+        <a class="notepad-blog-logo" href="{{ site.url }}"><img src="{{ site.url }}/images/{{ site.logo }}" alt="Blog Logo" /></a>
+        
+        
+        <div class="notepad-blog-menu">      
+    <div class="notepad-mobile-menu show-for-small">
+        <a href="#"><i class="fa fa-bars"></i></a>
     </div>
-
-    <header class="site-header">
-
-      <div class="wrapper">
-
-        <nav class="site-nav">
-            {% for page in site.pages %}
-              {% if page.title %}
-              <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-              {% endif %}
-            {% endfor %}
-        </nav>
-      </div>
-    </header>
-    <div class="page-content">
-        {{ content }}
+    <ul class="notepad-menu">
+        <li class="notepad-mobile-close-btn show-for-small text-right">
+            <a href="#"><i class="fa fa-times"></i></a>
+        </li>
+{% for link in site.links %}
+            <li>{% if link.external %}
+            <a href="{{ link.url }}">{{ link.title }}</a>
+            {% else %}
+            <a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
+            {% endif %} </li>
+{% endfor %}            
+           <li><a href="{{ site.url }}/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
+    </ul>
+</div>
+        <div class="clearfix"></div>
     </div>
+    <div class="notepad-site-head-content" >
+        <div class="notepad-site-head-bg"></div>
+        <h1 class="notepad-blog-title">
+            <span class="notepad-site-head-title-bg">
+                {{ site.title }}
+            </span>
+        </h1>
+        <h2 class="notepad-blog-description">{{ site.description }}</h2>
+    </div>
+</header>
 
-<script>
-  setInterval(function() {
-    var seconds = new Date().getSeconds();
-    var sdegree = seconds * 6 + 270;
-    seconds = ("0" + seconds).slice(-2);
-    var secondSel = document.querySelector(".seconds");
 
-    secondSel.style.transform = "rotate(" + sdegree + "deg) translate(160px) rotate(-" + sdegree + "deg)";
-    secondSel.innerHTML = seconds;
+<main class="notepad-content" role="main">
 
-    var minutes = new Date().getMinutes();
-    var mdegree = minutes * 6 + 270;
-    var minutesSel = document.querySelector(".minutes");
-    minutes = ("0" + minutes).slice(-2);
+            {{ content }}
+</main>
+    {% include footer.html %}
 
-    minutesSel.style.transform = "rotate(" + mdegree + "deg) translate(181px) rotate(-" + mdegree + "deg)";
-    minutesSel.innerHTML =  minutes;
-
-    var hours = new Date().getHours();
-    var hoursSel = document.querySelector(".hours");
-
-    if (hours > 12) {
-      hours = hours - 12;
-    }
-
-    hours = ("0" + hours).slice(-2);
-
-    hoursSel.innerHTML = hours;
-  }, 1000);
-
-  var btnSel = document.querySelector('.btn');
-  var header = document.getElementsByTagName('header')[0];
-
-  btnSel.addEventListener("click", function() {
-    header.scrollIntoView();
-  }, false);
-
-</script>
-
-  </body>
-
+{% include scripts.html %}  
+</body>
 </html>
