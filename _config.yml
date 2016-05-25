@@ -1,6 +1,6 @@
 title:            Notepad
 description:      "Blogging is fun"
-logo:             favicon.png
+logo:             logo.png
 disqus_shortname: simon
 share:            true
 dropcap:	  true
