@@ -14,8 +14,7 @@ url: "https://msrete.github.io"
 owner:
   name:           Simon Jang
   avatar:         simon.png
-  email:          msrete@gmail.com
-                  msrete@kut.ac.kr
+  email:          msrete@gmail.com, msrete@kut.ac.kr
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
   description:    Awesome Dude, Awesome Life
   # Social networking links used in footer. Update and remove as you like.
