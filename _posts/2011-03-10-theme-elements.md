@@ -8,7 +8,7 @@ tags: sample post
 imagefeature: cover6.jpg
 comments: true
 share: true
-published: false
+published: true
 mathjax: false
 featured: false
 ---
