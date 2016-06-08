@@ -5,7 +5,7 @@ description:
 modified: 2016-06-06
 category: articles
 tags: [tech survey]
-imagefeature: cover6.jpg
+imagefeature: 
 comments: true
 share: true
 ---
